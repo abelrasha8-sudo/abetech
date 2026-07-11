@@ -1,58 +1,135 @@
-+<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abi Tech (Abe Samsung Tech)</title>
+    <style>
+        :root {
+            --primary: #0070f3;
+            --dark: #1a1a1a;
+            --light: #f5f5f7;
+            --accent: #00ff66;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark), #333);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        .btn-tg { background-color: #24A1DE; }
+        .btn-tt { background-color: #000000; }
+        .btn-ph { background-color: #25D366; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f4f7f6; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); color: #333;">
-        
-        <h1 style="color: #0056b3; text-align: center; border-bottom: 2px solid #0056b3; padding-bottom: 10px;">📱 እንኳን ወደ አቢ ቴክ (Abi Tech) የሞባይል ስልጠና በደህና መጡ! 🛠️</h1>
-        
-        <p style="font-size: 18px; text-align: center; font-weight: bold; color: #555;">በአጭር ጊዜ ውስጥ የሞባይል ጥገና ባለሙያ መሆን ይፈልጋሉ? አቢ ቴክ ዘመናዊና ሙሉ የኮምፒውተር እገዛ የታከለበት ስልጠና ይዞላችሁ ቀርቧል! 🚀</p>
-        
-        <hr style="border: 0; height: 1px; background: #ccc; margin: 20px 0;">
 
-        <h2 style="color: #2c3e50;">🔍 የምንሰጣቸው የስልጠና ዘርፎች (Course Details)</h2>
+    <header>
+        <h1>💻 Abi Tech</h1>
+        <p>የኢትዮጵያ እና የሌሎች አገሮች ምርጥ ምርጥ ሞባይል ሶፍትዌሮች ማከማቻ</p>
+    </header>
+
+    <div class="container">
         
-        <div style="background: white; padding: 15px; margin-bottom: 15px; border-left: 5px solid #2980b9; border-radius: 4px;">
-            <h3 style="margin-top: 0; color: #2980b9;">💻 የሞባይል ሶፍትዌር (Software Repair)</h3>
-            <ul style="line-height: 1.6;">
-                <li>🔓 <b>FRP & Bootloader Unlocking</b> — የጉግል አካውንት (FRP) በደቂቃዎች ውስጥ መክፈት።</li>
-                <li>🔄 <b>Flashing & Firmware</b> — ማንኛውንም ስልክ መግጠም (Flash ማድረግ) እና ሲስተም መስቀል።</li>
-                <li>🛠️ <b>Professional Tools</b> — በታወቁት <b>UnlockTool</b>, <b>Marvel GSM Tool</b>, እና <b>KS Tool</b> አጠቃቀም ላይ ጥልቅ ስልጠና።</li>
-                <li>📱 <b>Network & Country Lock</b> — የኔትወርክ እምቢ ያሉ ስልኮችን ማስተካከል።</li>
-            </ul>
+        <div class="card">
+            <h2>📢 ታላቅ የምስራች ከ Abi Tech!</h2>
+            <p>ከአሁን በኋላ በራሴ በልዩ ሁኔታ የሰራሁት ድረ-ገጽ (Website) ስላለኝ፣ ለእናንተ ለቴክኒሻኖች አሪፍ አሪፍ እና ጠቃሚ የሆኑ <strong>ነፃ (Free) የሞባይል ሶፍትዌሮችን</strong> በዚህ ገጽ ላይ ዘወትር የምለቅላችሁ ይሆናል! ሁልጊዜ እየገባችሁ ተከታተሉኝ። 🚀</p>
         </div>
 
-        <div style="background: white; padding: 15px; margin-bottom: 15px; border-left: 5px solid #27ae60; border-radius: 4px;">
-            <h3 style="margin-top: 0; color: #27ae60;">🔌 የሞባይል ሃርድዌር (Hardware Repair)</h3>
-            <ul style="line-height: 1.6;">
-                <li>🔬 <b>Motherboard Troubleshooting</b> — የስልክ ሰሌዳ (Motherboard) ችግሮችን መለየት።</li>
-                <li>📐 <b>Circuit Schematics</b> — በ <b>ZXW</b>, <b>JCID Drawing</b>, እና <b>Circuit Bit</b> በመታገዝ የዕቅድ ንድፎችን ማንበብና መስራት።</li>
-                <li>🛠️ <b>Component IC Reballing</b> — አይሲዎችን (IC) ማንሳት፣ መቅረጽ እና መግጠም።</li>
-                <li>🔋 <b>Charging & Display Solutions</b> — የስክሪን፣ የቻርጀር እና የባትሪ ጥገናዎች።</li>
-            </ul>
+        <div class="card">
+            <h2>🛠️ የሶፍትዌር እና ሃርድዌር ስልጠና</h2>
+            <p>በጉጉት ሲጠበቅ የነበረው የተሟላ የሞባይል <strong>Software እና Hardware ስልጠና</strong> በይፋ ጀምሬያለሁ! ጥራቱን የጠበቀ እውቀት ጨብጣችሁ ስራ ለመጀመር ፈጥናችሁ ተመዝገቡ። 🔥</p>
         </div>
 
-        <hr style="border: 0; height: 1px; background: #ccc; margin: 20px 0;">
-
-        <h2 style="color: #d35400;">🎁 የእኛ ልዩ ጥቅሞች (Why Choose Us?)</h2>
-        <ul style="line-height: 1.6; font-size: 16px;">
-            <li>👨‍🏫 <b>ተግባራዊ ስልጠና</b> — ንድፈ-ሐሳብ ብቻ ሳይሆን በእጅዎ እየነኩ የሚለማመዱበት (100% Practical)።</li>
-            <li>🤝 <b>የስራ ዕድል ጥቆማ</b> — ስልጠናውን ላጠናቀቁ ተማሪዎች የሙያ ማማከር ስራ።</li>
-            <li>📉 <b>ታላቅ ቅናሽ</b> — በ <b>300 ETB</b> ብቻ የሚሰጥ ልዩ ስልጠና!</li>
-        </ul>
-
-        <div style="background: #e74c3c; color: white; padding: 15px; border-radius: 5px; margin-top: 20px; text-align: center;">
-            <h3 style="margin-top: 0;">📍 የመመዝገቢያ ቦታ እና አድራሻ</h3>
-            <p style="margin: 5px 0;">🏢 <b>ቦታ፦</b> አዲስ አበባ፣ ኢትዮጵያ 🇪🇹</p>
-            <p style="margin: 5px 0;">📞 <b>ለበለጠ መረጃ፦</b> [ስልክ ቁጥርህን እዚህ አስገባ]</p>
-            <p style="margin: 5px 0;">✈️ <b>ቴሌግራም ቻናል፦</b> @Abi_Tech</p>
+        <div class="card">
+            <h2>📞 ፈጥነው ያግኙን / ለመመዝገብ</h2>
+            <p>ለስልጠና ምዝገባም ሆነ ለሌሎች ጥያቄዎች በሚከተሉት አድራሻዎች በቀጥታ እኔን ማግኘት ትችላላችሁ፦</p>
+            
+            <div class="btn-container">
+                <a href="https://t.me/Samsung_tech12" target="_blank" class="btn btn-tg">
+                    ✈️ Telegram ቻናል
+                </a>
+                <a href="https://www.tiktok.com/@samsung_tech34" target="_blank" class="btn btn-tt">
+                    🎵 TikTok ገጽ
+                </a>
+                <a href="tel:0718658887" class="btn btn-ph">
+                    📞 0718658887 ይደውሉ
+                </a>
+            </div>
         </div>
 
-        <p style="text-align: center; margin-top: 20px; font-style: italic; color: #7f8c8d; font-weight: bold;">✨ "የነገውን ስኬት ዛሬውኑ በ Abi Tech ይጀምሩ!" ✨</p>
     </div>
+
+    <footer>
+        <p>Abe Samsung Tech ነኝ፣ ይመቻችሁ! 👋 | © 2026 Abi Tech</p>
+    </footer>
+
 </body>
 </html>
