@@ -1,4 +1,37 @@
-<div class="main-container">
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .btn-tg { background: linear-gradient(135deg, #24A1DE, #0088cc); }
+        .btn-tt { background: linear-gradient(135deg, #111, #333); }
+        .btn-ph { background: linear-gradient(135deg, #25D366, #20ba5a); }
+        
+        /* የተሰቀለው የሀከር ፎቶ አቀማመጥ */
+        .hacker-pc-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border: 2px solid #ddd;
+        }
+        
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
         
         <div class="flag-container">
             <div class="flag-stripe green"></div>
@@ -7,17 +40,17 @@
         </div>
 
         <div class="top-logo-container">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=150&q=80" alt="Abe Tech Logo" class="top-logo">
+            <img src="logo.jpg" alt="Abe Tech Logo" class="top-logo" onerror="this.style.display='none'">
         </div>
         
         <h1>💻 Abe Tech 🇪🇹</h1>
 
-        <div class="section-box">
+        <div class="section-box box-news">
             <h2>📢 ታላቅ የምስራች ከ Abe Tech!</h2>
-            <p>ሰላም ቤተሰብ! በራሴ በልዩ ሁኔታ የሰራሁትን አዲሱን ኦፊሴላዊ የ <strong>Abe Tech</strong> ድረ-ገጽ በይፋ ከፍቻለሁ! 🎉 ከአሁን በኋላ እጅግ በጣም ምርጥ እና ተፈላጊ የሆኑ የሞባይል ሶፍትዌሮችን፣ ጠቃሚ Tool-ዎችን እና የጥገና ፋይሎችን በዚህ ዌብሳይት ላይ ሙሉ በሙሉ <strong>በነፃ (Free)</strong> የምለቅላችሁ ይሆናል። ዘወትር እየገባችሁ መውሰድ ትችላላችሁ! 🚀🔥</p>
+            <p>ሰላም ቤተሰብ! በራሴ በልዩ ሁኔታ የሰራሁትን አዲሱን ኦፊሴላዊ የ <strong>Abe Tech</strong> ድረ-ገጽ በይፋ ከፍቻለሁ! 🎉 ከአሁን በኋላ እጅግ በጣም ምርጥ እና ተፈላጊ የሆኑ የሞባይል ሶፍትዌሮችን፣ ጠቃሚ Tool-ዎችን እና የጥገና ፋይሎችን በዚህ ዌብሳይት ላይ ሙሉ በሙሉ <span class="highlight-text">በነፃ (Free)</span> የምለቅላችሁ ይሆናል። ዘወትር እየገባችሁ መውሰድ ትችላላችሁ! 🚀🔥</p>
         </div>
 
-        <div class="section-box">
+        <div class="section-box box-training">
             <h2>🛠️ የሶፍትዌር እና ሃርድዌር ስልጠና</h2>
             <p>እውቅና ያለውና ጥራቱን የጠበቀ የተሟላ የሞባይል <strong>Software እና Hardware ስልጠና</strong> ጀምሬያለሁ! በተግባር የተደገፈ እውቀት ይዘው ስራ ለመጀመር አሁኑኑ ይመዝገቡ። 🎯✨</p>
             <p><strong>የምንሰጣቸው ልዩ አገልግሎቶች እና ስልጠናዎች፦</strong></p>
@@ -28,7 +61,7 @@
             </ul>
         </div>
 
-        <div class="section-box">
+        <div class="section-box box-contact">
             <h2>📞 ለመመዝገብ እና ፈጣን አገልግሎት ለማግኘት</h2>
             <p>ለስልጠና ምዝገባ፣ ለሪሞት (Remote) አገልግሎት ወይም ለማንኛውም ጥያቄ በሚከተሉት አድራሻዎች በቀጥታ እኔን ማግኘት ይችላሉ፦</p>
             
@@ -45,7 +78,7 @@
             </div>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=600&q=80" alt="Abe Tech Hacker Owner" class="hacker-pc-img">
+        <img src="hacker.jpg" alt="Abe Tech Hacker Owner" class="hacker-pc-img" onerror="this.style.display='none'">
 
         <footer>
             <p>Abe Samsung Tech ነኝ፣ ይመቻችሁ! 👋🌟</p>
