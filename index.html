@@ -3,83 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abi Tech - Abe Samsung Tech</title>
+    <title>Abi Tech (Abe Samsung Tech)</title>
     <style>
-        :root {
-            --primary: #0070f3;
-            --dark: #111111;
-            --light: #f8f9fa;
-            --accent: #ff9900;
-        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e4e9f2;
             margin: 0;
-            padding: 0;
-            background-color: var(--light);
-            color: #333;
-            line-height: 1.8;
-        }
-        header {
-            background: linear-gradient(135deg, var(--dark), #222);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            color: var(--primary);
-            letter-spacing: 1px;
-        }
-        header p {
-            margin: 15px 0 0;
-            font-size: 1.3rem;
-            color: #bbb;
-        }
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--primary);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card h2 {
-            margin-top: 0;
-            color: var(--dark);
-            font-size: 1.6rem;
+            padding: 20px;
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 12px;
-            border-bottom: 2px solid #eee;
+            min-height: 100vh;
+        }
+        .main-container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        /* የባንዲራ አቀማመጥ */
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 5px;
+        }
+        .flag-stripe {
+            width: 35px;
+            height: 10px;
+            border-radius: 2px;
+        }
+        .green { background-color: #009a44; }
+        .yellow { background-color: #fcd116; }
+        .red { background-color: #ce1126; }
+
+        h1 {
+            color: #0056b3;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            border-bottom: 3px solid #0056b3;
             padding-bottom: 10px;
         }
-        .card p {
-            font-size: 1.1rem;
-            color: #555;
+        /* የሀከር ፎቶ ማሳያ */
+        .hacker-img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 16px;
+            margin: 15px 0 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
-        .feature-list {
-            margin: 15px 0;
-            padding-left: 20px;
+        .section-box {
+            background-color: #f8fafc;
+            border-left: 5px solid #0056b3;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 16px 16px 0;
+            text-align: left;
         }
-        .feature-list li {
-            margin-bottom: 10px;
-            font-size: 1.05rem;
+        .section-box h2 {
+            margin-top: 0;
+            color: #1a1a1a;
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.8;
+            margin: 10px 0;
         }
         .btn-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
             margin-top: 25px;
         }
         .btn {
@@ -87,45 +86,48 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            padding: 15px 25px;
+            padding: 14px;
+            margin-bottom: 12px;
             color: white;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 12px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
         }
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transform: scale(1.02);
+            opacity: 0.9;
         }
-        .btn-tg { background: linear-gradient(135deg, #24A1DE, #0088cc); }
-        .btn-tt { background: linear-gradient(135deg, #111, #333); }
-        .btn-ph { background: linear-gradient(135deg, #25D366, #20ba5a); }
+        .btn-tg { background-color: #24A1DE; }
+        .btn-tt { background-color: #000000; }
+        .btn-ph { background-color: #25D366; }
+        
         footer {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: var(--dark);
-            color: #888;
-            margin-top: 60px;
-            font-size: 1rem;
-        }
-        footer p { margin: 5px 0; }
-        .highlight { color: var(--primary); font-weight: bold; }
-        .badge {
-            background-color: #ff3b30;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            vertical-align: middle;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+            font-weight: bold;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>💻 Abi Tech</h1>
-        <p>የኢትዮጵያ እና የሌሎች አገሮች ምርጥ ምርጥ ሞባይል ሶፍትዌሮች እና የጥገና መፍትሔዎች ማከማቻ</p>
-    </header>
+    <div class="main-container">
+        
+        <div class="flag-container">
+            <div class="flag-stripe green"></div>
+            <div class="flag-stripe yellow"></div>
+            <div class="flag-stripe red"></div>
+        </div>
+        
+        <h1>💻 Abi Tech 🇪🇹</h1>
+        
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Abi Tech Hacker" class="hacker-img">
+
+        <div class="section-box">
+            <h2>📢 ታላቅ የምስራች ከ Abi Tech!</h2>
+            <p>ከአሁን በኋላ በራሴ በልዩ ሁኔታ የሰራሁት አዲስ ድረ-ገጽ (Website) ስላለኝ፣ ለእናንተ ለቴክኒሻኖች እና ለወዳጆቼ እጅግ አሪፍ አሪፍ እና ምርጥ የተባሉ የኢትዮጵያ እና የሌሎች አገሮች <strong>ነፃ (Free) የሞባይል ሶፍትዌሮችን</strong>፣ FRP መክፈቻዎችንና ጠቃሚ Tool-ዎችን በዚህ ዌብሳይት ላይ ዘወትር የምለቅላችሁ ይሆናል! 🚀🔥</p>
+        </div>
